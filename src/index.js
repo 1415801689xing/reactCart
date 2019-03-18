@@ -7,6 +7,8 @@ import CartSample from './CartSample'
 import Composition from './components/Composition';
 import Hoc from './components/Hoc';
 import ContextSample from './components/ContextSample';
+import WrappedHorizontalLoginForm from './components/AntdTest';
+import KFormSample from './components/KFormSample';
 
 
 // ReactDOM.render(<h1>React 真酷</h1>, document.querySelector('#root'))
@@ -19,8 +21,11 @@ import ContextSample from './components/ContextSample';
 
 // ReactDOM.render( <Hoc stage="React"/>, document.querySelector('#root'))
 
-ReactDOM.render( <ContextSample></ContextSample>, document.querySelector('#root'))
+// ReactDOM.render( <ContextSample></ContextSample>, document.querySelector('#root'))
 
+// ReactDOM.render( <WrappedHorizontalLoginForm />, document.querySelector('#root'))
+
+ReactDOM.render( <KFormSample /> , document.querySelector('#root'))
 
 
 // ReactDOM.render(<Lifecycle></Lifecycle>, document.querySelector('#root'))
