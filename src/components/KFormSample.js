@@ -1,3 +1,9 @@
+/* 表单实践
+ * @Author: hehs 
+ * @Date: 2019-03-19 21:19:23 
+ * @Last Modified by: hehs
+ * @Last Modified time: 2019-03-19 21:35:47
+ */
 import React, { Component } from 'react';
 import { Icon } from 'antd';
 
@@ -78,7 +84,7 @@ function kFormCreate(Comp){
       )
     }
 
-    // 
+    // 获取表单的值
     handleFocus = e =>{
       const field = e.target.name
       this.setState({

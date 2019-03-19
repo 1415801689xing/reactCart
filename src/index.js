@@ -10,6 +10,11 @@ import ContextSample from './components/ContextSample';
 import WrappedHorizontalLoginForm from './components/AntdTest';
 import KFormSample from './components/KFormSample';
 
+import store from './store'
+import ReduxTest from './components/ReduxTest';
+
+import {Provider} from 'react-redux'
+
 
 // ReactDOM.render(<h1>React 真酷</h1>, document.querySelector('#root'))
 
@@ -25,7 +30,7 @@ import KFormSample from './components/KFormSample';
 
 // ReactDOM.render( <WrappedHorizontalLoginForm />, document.querySelector('#root'))
 
-ReactDOM.render( <KFormSample /> , document.querySelector('#root'))
+// ReactDOM.render( <KFormSample /> , document.querySelector('#root'))
 
 
 // ReactDOM.render(<Lifecycle></Lifecycle>, document.querySelector('#root'))
@@ -41,3 +46,14 @@ ReactDOM.render( <KFormSample /> , document.querySelector('#root'))
 // }
 
 // setInterval(tick, 1000)
+
+function render(){
+    ReactDOM.render(
+        <Provider store={store}>
+            <ReduxTest/>
+        </Provider> , 
+        document.querySelector('#root')
+    )    
+}
+render()
+// store.subscribe(render)
