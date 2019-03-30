@@ -48,12 +48,12 @@ import {Provider} from 'react-redux'
 // setInterval(tick, 1000)
 
 function render(){
-    ReactDOM.render(
-        <Provider store={store}>
-            <ReduxTest/>
-        </Provider> , 
-        document.querySelector('#root')
-    )    
+	ReactDOM.render(
+		<Provider store={store}>
+				<ReduxTest/>
+		</Provider> , 
+		document.querySelector('#root')
+	)    
 }
 render()
 // store.subscribe(render)
