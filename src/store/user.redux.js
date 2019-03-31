@@ -1,23 +1,28 @@
 const initialState = {
-  isLogin: false
-}
+  isLogin: false,
+};
 
 export default (state = initialState, {type, payload}) => {
   switch (type) {
-  case 'login':
-    return {isLogin: true }
+    case 'login':
+      return {isLogin: true};
 
-  default:
-    return state
+    default:
+      return state;
   }
-}
+};
+// for redux-thunk
+// export function login(){
 
-export function login(){
-  
-  return (dispatch)=>{
-    // mock异步登录
-    setTimeout(() => {
-      dispatch({type:'login'})
-    }, 1000);
-  }
+//   return (dispatch)=>{
+//     // mock异步登录
+//     setTimeout(() => {
+//       dispatch({type:'login'})
+//     }, 1000);
+//   }
+// }
+
+// for saga
+export function login () {
+  return {type: 'login_request'};
 }
