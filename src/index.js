@@ -14,6 +14,7 @@ import store from './store'
 import ReduxTest from './components/ReduxTest';
 
 import {Provider} from 'react-redux'
+import RouterSample from './components/RouterSample';
 
 
 // ReactDOM.render(<h1>React 真酷</h1>, document.querySelector('#root'))
@@ -37,6 +38,8 @@ import {Provider} from 'react-redux'
 
 // ReactDOM.render(<CartSample title="React购物车"></CartSample>, document.querySelector('#root'))
 
+ReactDOM.render(<RouterSample></RouterSample>, document.querySelector('#root'))
+
 // 动态渲染
 // let someProp = 'some value'
 // function tick () {
@@ -47,13 +50,13 @@ import {Provider} from 'react-redux'
 
 // setInterval(tick, 1000)
 
-function render(){
-	ReactDOM.render(
-		<Provider store={store}>
-				<ReduxTest/>
-		</Provider> , 
-		document.querySelector('#root')
-	)    
-}
-render()
+// function render(){
+// 	ReactDOM.render(
+// 		<Provider store={store}>
+// 				<ReduxTest/>
+// 		</Provider> , 
+// 		document.querySelector('#root')
+// 	)    
+// }
+// render()
 // store.subscribe(render)
